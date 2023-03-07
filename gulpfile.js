@@ -188,10 +188,10 @@ gulp.task(
   'build', 
   gulp.series(
     'clear', 
-    'html', /* replace the 'html' with 'html-minified' if you need minification */ 
+    'html-minified', /* replace the 'html' with 'html-minified' if you need minification */ 
     'sass', 
     'js', 
-    'js-copy', /* replace the 'js-copy' with 'js-minified' if you need minification */
+    'js-minified', /* replace the 'js-copy' with 'js-minified' if you need minification */
     'fonts', 
     'videos',
     'extra-files', 
