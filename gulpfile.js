@@ -113,7 +113,7 @@ gulp.task('js-minified', () => {
     .pipe(browserSync.stream());
 });
 // Task to minify css using package cleanCSs
-gulp.task('minify-css', () => {
+gulp.task('minifyCSS', () => {
   // Folder with files to minify
   return gulp.src(dist_assets_folder + 'css/homework/*.css')
   //The method pipe() allow you to chain multiple tasks together 
