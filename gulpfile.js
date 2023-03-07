@@ -112,16 +112,6 @@ gulp.task('js-minified', () => {
     .pipe(gulp.dest(dist_assets_folder + 'js/homework'))
     .pipe(browserSync.stream());
 });
-// Task to minify css using package cleanCSs
-gulp.task('minify-css', () => {
-  // Folder with files to minify
-  return gulp.src(dist_assets_folder + 'homework/*.css')
-  //The method pipe() allow you to chain multiple tasks together 
-  //I execute the task to minify the files
- .pipe(minifyCss())
- //I define the destination of the minified files with the method dest
- .pipe(gulp.dest('dist'));
-});
 
 gulp.task('images', () => {
   return gulp.src([ src_assets_folder + 'images/**/*.+(png|jpg|jpeg|gif|svg|ico)' ], { since: gulp.lastRun('images') })
