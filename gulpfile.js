@@ -203,7 +203,7 @@ gulp.task(
     'js', 
     'js-minified', /* replace the 'js-copy' with 'js-minified' if you need minification */
     'fonts', 
-    'minify-css',
+    // 'minify-css',
     'videos',
     'extra-files', 
     'images', 
