@@ -22,7 +22,7 @@ const gulp                      = require('gulp'),
       sourcemaps                = require('gulp-sourcemaps'),
       plumber                   = require('gulp-plumber'),
       autoprefixer              = require('gulp-autoprefixer'),
-      minifycss              = require('gulp-clean-css'),
+      minifyCss                 = require('gulp-clean-css'),
       babel                     = require('gulp-babel'),
       webpack                   = require('webpack-stream'),
       uglify                    = require('gulp-uglify'),
@@ -118,7 +118,7 @@ gulp.task('minify-css', () => {
   return gulp.src(dist_assets_folder + 'homework/*.css')
   //The method pipe() allow you to chain multiple tasks together 
   //I execute the task to minify the files
- .pipe(minifycss())
+ .pipe(minifyCss())
  //I define the destination of the minified files with the method dest
  .pipe(gulp.dest('dist'));
 });
