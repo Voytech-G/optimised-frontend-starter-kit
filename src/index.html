@@ -7,20 +7,19 @@
     <meta name="description" content="Web Dev Insider demo page for learning purposes.">
     <meta name="format-detection" content="telephone=no">
     <meta name="robots" content="noindex, nofollow">
-    <link rel="preconnect" href="https://unpkg.com/">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googletagmanager.com">
-    
-    <link rel="preload" href="/assets/css/homework/app.css" rel="stylesheet">
+
+    <link href="/assets/css/homework/app.css" rel="stylesheet">
     <link media="none" onload="if(media!='all')media='all'" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 
     <link href="/favicon.ico" rel="icon">
-    
+
+    <script src="https://js.stripe.com/v3/"></script>
+
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,900;1,100;1,200;1,300;1,400;1,500" rel="stylesheet">
     <script src="//use.typekit.net/lna1ryl.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
-   
-    <script src="/assets/js/homework/vendor/jquery/dist/jquery.min.js"></script> 
+
+    <script src="/assets/js/homework/vendor/jquery/dist/jquery.min.js"></script>
     <script>var media_url = '/assets/', site_url = '/';$(document).load().scrollTop(0);</script>
     <script data-main="/assets/js/homework/home" src="/assets/js/homework/vendor/requirejs/require.js"></script>
 
@@ -31,6 +30,20 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-TGDSWZ8');</script>
     <!-- End Google Tag Manager -->
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/5fc2ba00920fc91564cb9b3c/default';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+      })();
+    </script>
+    <!--End of Tawk.to Script-->
   </head>
   <body>
 
@@ -52,11 +65,11 @@
       </a>
 
       <ul class="navbar-menu">
-        <li class="navbar-menu__dropdown"><a id="item-1" href="">Platform</a></li>
-        <li class="navbar-menu__dropdown"><a id="item-2" href="">Solutions</a></li>
-        <li class="navbar-menu__dropdown"><a id="item-3" href="">Services</a></li>
-        <li><a title="Log in" href="cta-ad.html">Log in</a></li>
-        <li><a title="Contact" href="contact.html">Contact</a></li>
+        <li class="navbar-menu__dropdown"><a id="item-1" href="#">Platform</a></li>
+        <li class="navbar-menu__dropdown"><a id="item-2" href="#">Solutions</a></li>
+        <li class="navbar-menu__dropdown"><a id="item-3" href="#">Services</a></li>
+        <li><a title="Log in" href="/">Log in</a></li>
+        <li><a title="Contact" href="/">Contact</a></li>
         <li><a class="navbar-menu__search js-open-searchbar" href="#" title="What are you looking for?"><span>Search</span></a></li>
       </ul>
       <a title="Menu" class="l-navbar__burger" href="javascript:;">Menu</a>
@@ -67,7 +80,7 @@
         <div class="l-megamenu__layer" id="megamenu-item-1">
           <div class="col-65 l-megamenu__links left">
             <ul>
-              <li><a href="news-single.html">Platforma Overview</a></li>
+              <li><a href="/">Platform Overview</a></li>
               <li><a href="/">Management Center</a></li>
               <li>
                 <a title="Modules" href="/">Modules</a>
@@ -95,7 +108,7 @@
         <div class="l-megamenu__layer" id="megamenu-item-2">
           <div class="col-65 l-megamenu__links left">
             <ul>
-              <li><a href="news-listing.html">Solution Overview</a></li>
+              <li><a href="/">Solution Overview</a></li>
               <li>
                 <a title="Call recording" href="/">Call recording</a>
                 <ul>
@@ -130,7 +143,7 @@
         <div class="l-megamenu__layer" id="megamenu-item-3">
           <div class="col-65 l-megamenu__links left">
             <ul>
-              <li><a title="Support" href="partners.html">Support</a></li>
+              <li><a title="Support" href="/">Support</a></li>
               <li><a title="Training" href="/">Training</a></li>
               <li><a title="Consulting" href="/">Consulting</a></li>
             </ul>
@@ -151,7 +164,7 @@
     </div>
 
     <header
-    class="l-home-banner"
+      class="l-home-banner"
       style="background-image: url('/assets/images/homework/banner.png')">
       <div class="layout">
         <div class="home-banner__content text">
@@ -172,21 +185,20 @@
         </div>
 
         <div class="home-banner__anim">
-          <div>TEST IMG</div>
-          <img fetchpriority="high" id="resizer" src="/assets/images/homework/anim/empty-block.png" alt="Empty block" />
-          <img fetchpriority="high" id="shadow" src="/assets/images/homework/anim/shadow.png" alt="Shadow" />
-          <img fetchpriority="high" id="rainbow" src="/assets/images/homework/anim/rainbow.png" alt="Rainbow" />
-          <img fetchpriority="high" id="pc" src="/assets/images/homework/anim/pc.png" alt="PC" />
-          <img fetchpriority="high" id="social" src="/assets/images/homework/anim/social.png" alt="Social media" />
-          <img fetchpriority="high" id="mobile" src="/assets/images/homework/anim/mobile.png" alt="Mobile" />
-          <img fetchpriority="high" id="card-base" src="/assets/images/homework/anim/card-base.png" alt="Card base" />
-          <img fetchpriority="high" id="card-chip" src="/assets/images/homework/anim/card-chip.png" alt="Card chip" />
-          <img fetchpriority="high" id="cloud" src="/assets/images/homework/anim/cloud.png" alt="Cloud" />
-          <img fetchpriority="high" id="chart-base" src="/assets/images/homework/anim/chart-base.png" alt="Chart base" />
-          <img fetchpriority="high" id="chart-1" src="/assets/images/homework/anim/chart-1.png" alt="Chart 1" />
-          <img fetchpriority="high" id="chart-2" src="/assets/images/homework/anim/chart-2.png" alt="Chart 2" />
-          <img fetchpriority="high" id="chart-3" src="/assets/images/homework/anim/chart-3.png" alt="Chart 3" />
-          <img fetchpriority="high" id="email" src="/assets/images/homework/anim/email.png" alt="Email" />
+          <img id="resizer" src="/assets/images/homework/anim/empty-block.png" alt="Empty block" />
+          <img id="shadow" src="/assets/images/homework/anim/shadow.png" alt="Shadow" />
+          <img id="rainbow" src="/assets/images/homework/anim/rainbow.png" alt="Rainbow" />
+          <img id="pc" src="/assets/images/homework/anim/pc.png" alt="PC" />
+          <img id="social" src="/assets/images/homework/anim/social.png" alt="Social media" />
+          <img id="mobile" src="/assets/images/homework/anim/mobile.png" alt="Mobile" />
+          <img id="card-base" src="/assets/images/homework/anim/card-base.png" alt="Card base" />
+          <img id="card-chip" src="/assets/images/homework/anim/card-chip.png" alt="Card chip" />
+          <img id="cloud" src="/assets/images/homework/anim/cloud.png" alt="Cloud" />
+          <img id="chart-base" src="/assets/images/homework/anim/chart-base.png" alt="Chart base" />
+          <img id="chart-1" src="/assets/images/homework/anim/chart-1.png" alt="Chart 1" />
+          <img id="chart-2" src="/assets/images/homework/anim/chart-2.png" alt="Chart 2" />
+          <img id="chart-3" src="/assets/images/homework/anim/chart-3.png" alt="Chart 3" />
+          <img id="email" src="/assets/images/homework/anim/email.png" alt="Email" />
         </div>
       </div>
       <a title="Slide down" class="btn btn--border-blue btn--arrow-down" href="#main">Slide down</a>
@@ -289,7 +301,7 @@
               <figure>
                 <img src="/assets/images/homework/i/slideshow/platform-cloud-enabled-f7b0.png" width="175" alt="">
               </figure>
-              <h2 class="headline-2">Platforma 
+              <h2 class="headline-2">Platform
                 <br><span class="headline-2__smaller"> cloud-enabled solutions</span>
               </h2>
               <p class="small-text">
@@ -625,7 +637,7 @@
           <div class="col-85 l-footer__top-links right">
             <ul>
               <li>
-                <span>Platforma</span>
+                <span>Platform</span>
                 <ul>
                   <li><a title="Platform Overview" href="">Platform Overview</a></li>
                   <li><a title="Management Center" href="/">Management Center</a></li>
@@ -742,20 +754,5 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TGDSWZ8"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <script defer src="https://js.stripe.com/v3/"></script>
-    
-        <!--Start of Tawk.to Script-->
-        <script defer type="text/javascript">
-          var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-          (function(){
-          var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-          s1.async=true;
-          s1.src='https://embed.tawk.to/5fc2ba00920fc91564cb9b3c/default';
-          s1.charset='UTF-8';
-          s1.setAttribute('crossorigin','*');
-          s0.parentNode.insertBefore(s1,s0);
-          })();
-        </script>
-        <!--End of Tawk.to Script-->
   </body>
 </html>
