@@ -7,19 +7,20 @@
     <meta name="description" content="Web Dev Insider demo page for learning purposes.">
     <meta name="format-detection" content="telephone=no">
     <meta name="robots" content="noindex, nofollow">
+    <link rel="preconnect" href="https://unpkg.com/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googletagmanager.com">
 
-    <link href="/assets/css/homework/app.css" rel="stylesheet">
+    <link rel="preload" href="/assets/css/homework/app.css" rel="stylesheet">
     <link media="none" onload="if(media!='all')media='all'" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 
     <link href="/favicon.ico" rel="icon">
-
-    <script src="https://js.stripe.com/v3/"></script>
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,900;1,100;1,200;1,300;1,400;1,500" rel="stylesheet">
     <script src="//use.typekit.net/lna1ryl.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
 
-    <script src="/assets/js/homework/vendor/jquery/dist/jquery.min.js"></script>
+    
     <script>var media_url = '/assets/', site_url = '/';$(document).load().scrollTop(0);</script>
     <script data-main="/assets/js/homework/home" src="/assets/js/homework/vendor/requirejs/require.js"></script>
 
@@ -185,20 +186,20 @@
         </div>
 
         <div class="home-banner__anim">
-          <img id="resizer" src="/assets/images/homework/anim/empty-block.png" alt="Empty block" />
-          <img id="shadow" src="/assets/images/homework/anim/shadow.png" alt="Shadow" />
-          <img id="rainbow" src="/assets/images/homework/anim/rainbow.png" alt="Rainbow" />
-          <img id="pc" src="/assets/images/homework/anim/pc.png" alt="PC" />
-          <img id="social" src="/assets/images/homework/anim/social.png" alt="Social media" />
-          <img id="mobile" src="/assets/images/homework/anim/mobile.png" alt="Mobile" />
-          <img id="card-base" src="/assets/images/homework/anim/card-base.png" alt="Card base" />
-          <img id="card-chip" src="/assets/images/homework/anim/card-chip.png" alt="Card chip" />
-          <img id="cloud" src="/assets/images/homework/anim/cloud.png" alt="Cloud" />
-          <img id="chart-base" src="/assets/images/homework/anim/chart-base.png" alt="Chart base" />
-          <img id="chart-1" src="/assets/images/homework/anim/chart-1.png" alt="Chart 1" />
-          <img id="chart-2" src="/assets/images/homework/anim/chart-2.png" alt="Chart 2" />
-          <img id="chart-3" src="/assets/images/homework/anim/chart-3.png" alt="Chart 3" />
-          <img id="email" src="/assets/images/homework/anim/email.png" alt="Email" />
+          <img fetchpriority="high" id="resizer" src="/assets/images/homework/anim/empty-block.png" alt="Empty block" />
+          <img fetchpriority="high" id="shadow" src="/assets/images/homework/anim/shadow.png" alt="Shadow" />
+          <img fetchpriority="high" id="rainbow" src="/assets/images/homework/anim/rainbow.png" alt="Rainbow" />
+          <img fetchpriority="high" id="pc" src="/assets/images/homework/anim/pc.png" alt="PC" />
+          <img fetchpriority="high" id="social" src="/assets/images/homework/anim/social.png" alt="Social media" />
+          <img fetchpriority="high" id="mobile" src="/assets/images/homework/anim/mobile.png" alt="Mobile" />
+          <img fetchpriority="high" id="card-base" src="/assets/images/homework/anim/card-base.png" alt="Card base" />
+          <img fetchpriority="high" id="card-chip" src="/assets/images/homework/anim/card-chip.png" alt="Card chip" />
+          <img fetchpriority="high" id="cloud" src="/assets/images/homework/anim/cloud.png" alt="Cloud" />
+          <img fetchpriority="high" id="chart-base" src="/assets/images/homework/anim/chart-base.png" alt="Chart base" />
+          <img fetchpriority="high" id="chart-1" src="/assets/images/homework/anim/chart-1.png" alt="Chart 1" />
+          <img fetchpriority="high" id="chart-2" src="/assets/images/homework/anim/chart-2.png" alt="Chart 2" />
+          <img fetchpriority="high" id="chart-3" src="/assets/images/homework/anim/chart-3.png" alt="Chart 3" />
+          <img fetchpriority="high" id="email" src="/assets/images/homework/anim/email.png" alt="Email" />
         </div>
       </div>
       <a title="Slide down" class="btn btn--border-blue btn--arrow-down" href="#main">Slide down</a>
@@ -754,5 +755,7 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TGDSWZ8"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+    <script defer src="https://js.stripe.com/v3/"></script>
+    <script defer src="/assets/js/homework/vendor/jquery/dist/jquery.min.js"></script>
   </body>
 </html>
